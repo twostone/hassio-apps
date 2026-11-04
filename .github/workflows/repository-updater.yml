@@ -1,0 +1,34 @@
+name: Repository Updater
+
+on:
+  repository_dispatch:
+    types: [update]
+  workflow_dispatch:
+    inputs:
+      app:
+        description: Nur diese App (Schlüssel in .apps.yml); leer = alle
+        required: false
+        default: ""
+        type: string
+      force:
+        description: Auch scheinbar aktuelle Apps neu schreiben
+        required: false
+        default: false
+        type: boolean
+      dry-run:
+        description: Nur anzeigen, nichts committen
+        required: false
+        default: false
+        type: boolean
+
+permissions: {}
+
+jobs:
+  update:
+    uses: twostone/hassio-workflows/.github/workflows/repository-updater.yml@e8fa22248618d4114434940c6f7f44d77270e6ca # v1.0.0
+    with:
+      app: ${{ github.event.client_payload.app || inputs.app }}
+      force: ${{ inputs.force == true }}
+      dry-run: ${{ inputs.dry-run == true }}
+    secrets:
+      UPDATER_TOKEN: ${{ secrets.UPDATER_TOKEN }}

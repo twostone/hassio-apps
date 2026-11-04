@@ -1,0 +1,18 @@
+---
+# Read by hassio-addons/repository-updater. The key is the directory in this repository (= app slug),
+# `target` the app directory inside the app repository, `image` the multi-arch image (tag = version).
+channel: stable
+changelog: prepend
+apps:
+  sweatbook:
+    repository: twostone/sweatbook
+    target: sweatbook
+    image: ghcr.io/twostone/sweatbook
+  essensplanung:
+    repository: twostone/meal-planner
+    target: meal-planner
+    image: ghcr.io/twostone/meal-planner
+  garmin_insights:
+    repository: twostone/garmin-insights
+    target: garmin-insights
+    image: ghcr.io/twostone/garmin-insights

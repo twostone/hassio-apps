@@ -12,6 +12,7 @@ Oder manuell: **Einstellungen → Apps → App Store → ⋮ → Repositories** 
 | App | Version | Architekturen | Beschreibung |
 | --- | --- | --- | --- |
 | [Essensplanung](https://github.com/twostone/meal-planner) | [v0.16.0](https://github.com/twostone/meal-planner/tree/v0.16.0) | aarch64, amd64 | Wöchentliche Essensplanung für den Haushalt |
+| [Garmin Insights](https://github.com/twostone/garmin-insights) | [v0.5.0](https://github.com/twostone/garmin-insights/tree/v0.5.0) | aarch64, amd64 | Garmin-Daten lokal spiegeln, auswerten und per PWA, REST-API und MCP nutzen |
 | [Sweatbook](https://github.com/twostone/sweatbook) | [v1.10.0](https://github.com/twostone/sweatbook/tree/v1.10.0) | aarch64, amd64 | Training tracken und planen |
 
 ## Wie dieses Repository gepflegt wird

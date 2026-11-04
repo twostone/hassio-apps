@@ -1,5 +1,5 @@
 name: Garmin Insights
-version: 0.5.0
+version: 0.6.0
 slug: garmin_insights
 description: Garmin-Daten lokal spiegeln, auswerten und per PWA, REST-API und MCP
   nutzen
@@ -10,7 +10,6 @@ arch:
 homeassistant: 2026.10.1
 image: ghcr.io/twostone/garmin-insights
 ingress: true
-ingress_port: 8099
 panel_icon: mdi:run-fast
 panel_title: Garmin Insights
 panel_admin: false

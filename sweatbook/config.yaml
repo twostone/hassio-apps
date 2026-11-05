@@ -1,5 +1,5 @@
 name: Sweatbook
-version: 1.10.0
+version: 1.10.1
 slug: sweatbook
 description: Training tracken und planen
 url: https://github.com/twostone/sweatbook
@@ -8,7 +8,6 @@ arch:
 - amd64
 image: ghcr.io/twostone/sweatbook
 ingress: true
-ingress_port: 8099
 panel_icon: mdi:dumbbell
 panel_title: Sweatbook
 panel_admin: false

@@ -1,5 +1,5 @@
 name: Garmin Insights
-version: 0.6.0
+version: 0.6.1
 slug: garmin_insights
 description: Garmin-Daten lokal spiegeln, auswerten und per PWA, REST-API und MCP
   nutzen

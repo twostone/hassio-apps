@@ -1,8 +1,9 @@
 name: Sweatbook
-version: 1.11.0
+version: 1.12.0
 slug: sweatbook
 description: Training tracken und planen
 url: https://github.com/twostone/sweatbook
+homeassistant: 2026.10.1
 arch:
 - aarch64
 - amd64
@@ -13,9 +14,14 @@ panel_title: Sweatbook
 panel_admin: false
 ports:
   8099/tcp: null
+homeassistant_api: true
 options:
   log_level: info
   mcp_enabled: false
+  app_external_url: ''
+  ha_external_url: ''
 schema:
   log_level: list(debug|info|warning|error)
   mcp_enabled: bool
+  app_external_url: url?
+  ha_external_url: url?

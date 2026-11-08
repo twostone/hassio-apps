@@ -1,8 +1,9 @@
 name: Essensplanung
-version: 0.16.1
+version: 0.17.0
 slug: essensplanung
 description: "W\xF6chentliche Essensplanung f\xFCr den Haushalt"
 url: https://github.com/twostone/meal-planner
+homeassistant: 2026.10.1
 arch:
 - aarch64
 - amd64
@@ -14,6 +15,8 @@ panel_admin: false
 homeassistant_api: true
 discovery:
 - meal_planner
+ports:
+  8101/tcp: null
 options:
   log_level: info
 schema:
@@ -21,3 +24,5 @@ schema:
   ai_entity_recipe: match(^ai_task\.[a-z0-9_]+$)?
   ai_entity_titles: match(^ai_task\.[a-z0-9_]+$)?
   ai_entity_image: match(^ai_task\.[a-z0-9_]+$)?
+  mcp_app_url: url?
+  mcp_ha_url: url?
